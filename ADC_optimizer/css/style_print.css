@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+@page{
+	margin-bottom: .5in;
+	margin-left: .25in;
+	margin-right: .25in;
+	margin-top: .5in;
+}
+#container_01, #container_02, #div_table, button{
+	display: none;
+}
+body{
+	background: white;
+	font: 8pt Georgia;
+}
+input{
+	font: 8pt Georgia;
+	width: .5in
+}
+#container_03{
+	position: relative;/*Stack on top of each other for smaller screens.*/
+    text-align: center;/*Center all divs placed inside this container.*/
+    width: 100%;/*Fill the entire width of the screen.*/
+}
+#div_drawer{
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 100%;
+}
+.drawer_row{
+	text-align: center;/*Center all elements placed inside this div.*/
+	width: 100%;
+}
+.drawer_cell{
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+	display: inline-block;
+	height: 1.25in;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 23%;
+}
+.single_cubie{
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+	display: inline-block;
+	height: 1.25in;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 15%;
+}
+.double_cubie{
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+	display: inline-block;
+	height: 1.25in;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 30.8%;
+}
+.triple_cubie{
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+	display: inline-block;
+	height: 1.25in;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 46.7%;
+}
+.two_inch_bin{
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+	display: inline-block;
+	height: 1.75in;
+	margin: 5px;
+	overflow: hidden;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 11%;
+}
+.four_inch_bin{
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+	display: inline-block;
+	height: 3.25in;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 21%;
+}
+.six_inch_bin{
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+	display: inline-block;
+	height: 3.25in;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;/*Keep all elements flush with the top*/
+	width: 30%;
+}
