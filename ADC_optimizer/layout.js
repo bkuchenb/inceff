@@ -874,11 +874,11 @@ function save_configuration(){
 }
 function save_all(){
 	var xhttp = new XMLHttpRequest();
-	var post_data = "save=test";
+	var post_data = 'save=' + (JSON.stringify(saved_configurations));
 	xhttp.onreadystatechange = function(){
 		if (xhttp.readyState == 4 && xhttp.status == 200){
-			//Get the image.
-			var return_text = xhttp.responseText;
+			//Print a test message.
+			var return_text = JSON.parse(xhttp.responseText);
 			console.log(return_text);
 		}
 	}
