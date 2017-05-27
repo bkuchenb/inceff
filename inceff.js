@@ -1,4 +1,4 @@
-document.getElementById('btn_login').
+/* document.getElementById('btn_login').
 
 //Add listeners to the default buttons.
 var login = document.getElementById('btn_login');
@@ -965,4 +965,4 @@ function create_listener_header(column){
 			create_row(station_data[y]);
 		}
 	}, false);
-}
+} */
