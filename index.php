@@ -38,7 +38,7 @@ else
 </header>
 	<div id="container_03">
 		<div id="body" class="body_center">
-			<button id="btn_adc" href="http://www.increase-efficiency.net/ADC_optimizer">ADC Optimizer</button>
+			<a href="http://www.increase-efficiency.net/ADC_optimizer">ADC Optimizer</a>
 		</div>
 	</div>
 	<script src="inceff.js" type="text/javascript"></script>
