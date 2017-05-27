@@ -1,12 +1,4 @@
-<?
-if ($_SERVER['REQUEST_METHOD'] === 'POST')
-{
-  $file = '/tmp/sample-app.log';
-  $message = file_get_contents('php://input');
-  file_put_contents($file, date('Y-m-d H:i:s') . " Received message: " . $message . "\n", FILE_APPEND);
-}
-else
-{
+<?php
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -44,6 +36,3 @@ else
 	<script src="inceff.js" type="text/javascript"></script>
 </body>
 </html>
-<? 
-} 
-?>
