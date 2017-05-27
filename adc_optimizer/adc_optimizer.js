@@ -1,4 +1,3 @@
-//https://bkuchenb.github.io/ADC_optimizer/
 //Variables to store the inventory.
 var input = [];
 var station_data = [];

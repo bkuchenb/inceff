@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Price Check</title>
+	<meta charset="utf-8">
+	<link type="text/css" href="css/style.css" rel="stylesheet" media="screen">
+	<link type="text/css" href="css/style_print.css" rel="stylesheet" media="print">
+</head>
+<header>
+	<div class="container_01">
+		<div class="header_center">
+			<img class="logo" src="images/logo_st_peters.png" />
+		</div>
+	</div>
+	<div class="container_02">
+		<nav class="navbar">
+			<button id="btn_check">Check Pricing</button>
+		</nav>
+	</div>
+</header>
+	<div class="container_03">
+		<div id="body" class="body_center">
+			<input type="file" id="lawson_file" name="lawson[]" multiple />
+			<input type="file" id="cardinal_files" name="cardinal[]" multiple />
+			<table id="table">
+				<thead>
+					<tr>
+						<th>PO #</th>
+						<th>Line #</th>
+						<th>Lawson #</th>
+						<th>Vendor Item #</th>
+						<th>Description</th>
+						<th>Lawson Price</th>
+						<th>Invoice Price</th>
+						<th id="col_1_delete" class="percent_change">% Change</th>
+						<th id="col_2_delete" class="change">Change</th>
+						<th id="col_3_delete" class="delete"></th>
+					</tr>
+				</thead>
+				<tbody id="table_body">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="file_reader.js"></script>
+</body>
+</html>
