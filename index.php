@@ -7,6 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link type="text/css" href="css/inceff_layout.css" rel="stylesheet" media="screen">
+	<link type="text/css" href="css/inceff.css" rel="stylesheet" media="screen">
 </head>
 <body>
 	<div id="c1" class="c1_default">
@@ -22,11 +23,6 @@
 	<div id="c3" class="c3_default">
 		<div id="c3_L" class="c3_L_default">
 			<div id="c3_L_r1" class="c3_L_r1_default">
-				<!-- <a class="c3_L_r1_a" href="http://www.increase-efficiency.net/adc_optimizer">ADC Optimizer</a>
-				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/barcode_form">Barcode Form</a>
-				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/order_form">Order Form</a>
-				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/price_compare">Price Compare</a>
-				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/tcf">TCF</a> -->
 				<a class="c3_L_r1_a" href="http://localhost/inceff/adc_optimizer">ADC Optimizer</a>
 				<a class="c3_L_r1_a" href="http://localhost/inceff/barcode_form">Barcode Form</a>
 				<a class="c3_L_r1_a" href="http://localhost/inceff/file_reader">File Reader</a>
@@ -45,6 +41,5 @@
 		</div>
 	</div>
 	<div id="c4" class="c4_default"></div>
-	<script src="inceff.js" type="text/javascript"></script>
 </body>
 </html>

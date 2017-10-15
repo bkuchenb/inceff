@@ -24,8 +24,8 @@ html{
 	border: 0.03125em solid black;
 } */
 .c1_default{
-	margin: 0.3125em 0.3125em 0.3125em 0;
-	padding: 0.3125em;
+	margin: 0;
+	padding: 0;
 	position: relative;
     text-align: center;
     width: 100%;
@@ -35,23 +35,20 @@ html{
 	margin: auto;
 	min-height: 4.5em;
 	position: absolute;
-	top: 0.3125em;
-	width: 19.5%;
+	width: 20%;
 }
-.c1_L_default, .c3_L_default{left: 0.3125em;}
-.c1_R_default, .c3_R_default{right: 0.3125em;}
+.c1_L_default, .c3_L_default{left: 0;}
+.c1_R_default, .c3_R_default{right: 0;}
 .c1_C_default{
 	display: inline-block;
 	margin: auto;
 	min-height: 4.5em;
-	padding: 0.3125em;
+	padding: 0;
 	position: relative;
 	width: 60%;
 }
 .logo_default{
 	font-size: 3em;
-	margin: auto;
-	min-height: 1em;
 	width: 100%;
 }
 .c2_default{
@@ -72,8 +69,8 @@ html{
 	width: 60%;
 }
 .c3_default{
-	margin: 0.3125em 0.3125em 0.3125em 0;
-	padding: 0.3125em;
+	margin: 0;
+	padding: 0;
 	position: relative;
     text-align: center;
     width: 100%;
@@ -83,16 +80,13 @@ html{
 	margin: auto;
 	height: 30em;
 	position: absolute;
-	top: 0.3125em;
-	width: 19.5%;
+	width: 19.75%;
 }
 .c3_L_r1_default{
 	border: 0.003125em solid black;
 	font-size: 2em;
+	padding: 0.3125em;
 	text-align: left;
-}
-.c3_L_r1_a{
-	display: block;
 }
 .c3_C_default{
 	display: inline-block;
@@ -106,9 +100,6 @@ html{
 	border-right: 0.0625em solid black;
 	border-top: 0.0625em solid black;
 }
-.c3_C_r1_orderForm{
-	border: 0.0625em solid black;
-}
 .c3_C_r2_default{
 	border-bottom: 0.0625em solid black;
 	border-left: 0.0625em solid black;
@@ -117,24 +108,8 @@ html{
 	overflow: scroll;
 }
 .c4_default{
-	margin: 0.3125em 0.3125em 0.3125em 0;
+	margin: 0;
 	position: relative;
     text-align: center;
     width: 100%;
-}
-.c3_L_r1_div1, .c3_L_r1_div2, .c3_L_r1_div3{
-	font-weight: bold;
-	margin: 0.3125em;
-}
-.c3_L_r1_select1{
-	margin-left: 0.3125em;
-	width: 4.5em
-}
-.c3_L_r1_select2{
-	margin-left: .4em;
-	width: 4.5em
-}
-.c3_L_r1_btn1{
-	font-size: 1.25em;
-	width: 100%
 }

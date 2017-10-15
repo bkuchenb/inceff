@@ -7,8 +7,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link type="text/css" href="css/style.css" rel="stylesheet" media="screen">
-	<!--<link type="text/css" href="css/style_print.css" rel="stylesheet" media="print">-->
-	<!--<link href="css/tcf_table.css" rel="stylesheet" />-->
 </head>
 <body>
 	<div class="header">
