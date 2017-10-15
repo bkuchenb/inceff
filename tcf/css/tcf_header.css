@@ -1,0 +1,54 @@
+*{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+div.logo{
+	width: 100%;
+	background-color: #bbff99;
+	top: 0;
+	position: fixed;
+}
+button.tcf_header{
+	display: block;
+	margin:0 auto;
+	background-image: url(../img/tcf_logo.png);
+	background-color: #bbff99;
+	background-repeat: no-repeat;
+	border-style: none;
+	width: 623px;
+	height: 130px;
+}
+div.navBar{
+	width: 100%;
+	background-color: #bbff99;
+	top: 130px;
+	position: fixed;
+}
+body{
+	background-color: #bbff99;
+	padding-top:150px;
+}
+ul{
+	width: 603px;
+	margin:0 auto;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	text-align: center;
+	display: block;
+	color: black;
+	padding: 3px 20px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #5cd65c;
+}

@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+	background-color: #e6eeff;/*Create a light blue background.*/
+}
+.container_01{
+	position: relative;/*Stack on top of each other for smaller screens.*/
+    text-align: center;/*Center all divs placed inside this container.*/
+    width: 100%;/*Fill the entire width of the screen.*/
+}
+/*Placed in container 1.*/
+.header_center{
+	padding: 20px 0px;
+}
+/*Placed in header_center.*/
+.logo{
+	background-color: #e6eeff;
+	height: 77px;
+	width: 374px;
+}
+.container_02{
+	background-color: #99bbff;/*Create a blue background darker than container 1 and 3.*/
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	position: relative;/*Stack on top of each other for smaller screens.*/
+	text-align: center;/*Center all divs placed inside this container.*/
+    width: 100%;/*Fill the entire screen.*/
+}
+/*Placed in container 2.*/
+.navbar{
+	margin: auto;
+	min-height: 40px;/*Get no smaller than this.*/
+	padding: 10px 0px;
+	text-align: center;
+	width: 374px;/*Get no smaller than the logo.*/
+}
+.container_03{
+	position: relative;/*Stack on top of each other for smaller screens.*/
+    text-align: center;/*Center all divs placed inside this container.*/
+    width: 100%;/*Fill the entire screen.*/
+}
+/*Placed in container 3.*/
+.body_center{
+	height: 600px;
+	overflow: scroll;
+	padding: 10px 0;
+	text-align: center;/*Center all elements placed inside this div.*/
+}
+table{
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 10px;
+	text-align: left;
+}
+tr:hover td{
+	background-color: #99bbff;
+}
+td{
+  background: transparent;
+  border: 1px solid black;
+}
+th{
+	background-color: #ccddff;/*Create a blue background lighter than the navbar.*/
+	border: 1px solid black;
+	padding: 0px 6px;
+}
+#col_1_delete, #col_2_delete, #col_3_delete{
+	cursor: pointer;
+}

@@ -1,0 +1,60 @@
+.table{
+	font-size: 1em;
+	margin: auto;
+	text-align: left;
+}
+.th{
+	/*Create a blue background lighter than the navbar.*/
+	background-color: #ccddff;
+	border: 0.0625em solid black;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 0.125em;
+	margin-left: 0.125em;
+	margin-top: 0.125em;
+	min-height: 1.3em;
+	text-align: center;
+}
+.td{
+	background-color: white;
+	border: 0.0625em solid black;
+	display: inline-block;
+	font-size: 1em;
+	margin-bottom: 0.125em;
+	margin-left: 0.125em;
+	margin-top: 0.125em;
+	padding-left: 0.375em;
+	text-align: left;
+}
+.td0, .td5, .td6{
+	/* position: relative;
+	top: -0.475em; */
+}
+.td6{
+	/* Match the page background.*/
+	background-color: #e6eeff;
+	border: none;
+}
+.td_input{
+	background-color: transparent;
+	border: none;
+	min-height: 1em;
+	width: 100%;
+}
+#th0, #th1, #th3, #th4, #th5, #th6,
+.td0, .td1, .td3, .td4, .td5, .td6{
+	width: 8.125em;
+}
+#th2, .td2{
+	width: 18.75em;
+}
+#th6{
+	visibility: hidden;
+}
+.odd_row{
+	background-color: #D3D3D3;
+}
+.invalid_type{
+	background-color: Red;
+}

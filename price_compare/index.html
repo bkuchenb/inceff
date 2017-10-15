@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Price Compare</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<link rel="stylesheet" href="css/style_print.css" media="print">
+</head>
+<header>
+	<div class="container_01">
+		<div class="header_center">
+			<div class="logo">Price Compare</div>
+		</div>
+	</div>
+	<div class="container_02">
+		<nav id="navbar" class="navbar">
+			<button id="btn_check">Check Pricing</button>
+		</nav>
+	</div>
+</header>
+	<div class="container_03">
+		<div id="body" class="body_center">
+			<input type="file" id="source_file" name="source[]" multiple />
+			<input type="file" id="compare_files" name="compare[]" multiple />
+			<table id="table">
+				<thead>
+					<tr>
+						<th>Order #</th>
+						<th>Line #</th>
+						<th>Source Item #</th>
+						<th>Compare Item #</th>
+						<th>Description</th>
+						<th>Source Price</th>
+						<th>Compare Price</th>
+						<th id="col_1_delete" class="percent_change">% Change</th>
+						<th id="col_2_delete" class="change">Change</th>
+						<th id="col_3_delete" class="delete"></th>
+					</tr>
+				</thead>
+				<tbody id="table_body">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="price_compare.js"></script>
+</body>
+</html>
