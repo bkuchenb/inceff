@@ -1,0 +1,46 @@
+/* Naming Conventions:
+c = container
+The page starts with 4 containers stacked on top of each other.
+L = left, C = center, R = right
+Each container is split into 3 sections (left, center, right).
+r = row
+Some divs (left, center, right) have multiple rows. */
+.c3_C_r1_orderForm{
+	border: 0.0625em solid black;
+}
+.c3_L_r1_div1, .c3_L_r1_div2, .c3_L_r1_div3{
+	font-size: .65em;
+	font-weight: bold;
+	margin: 0.3125em;
+}
+.c3_L_r1_select1{
+	margin-left: 0.3125em;
+	width: 4.5em
+}
+.c3_L_r1_select2{
+	margin-left: .4em;
+	width: 4.5em
+}
+.c3_L_r1_btn1{
+	font-size: 1em;
+	width: 100%
+}
+@media print{
+	#c1, #c1_L, #c1_R, #c2, #c3_L, #c3_R, #c4{
+	display: none;
+	}
+	table, th, td{
+		background-color: white;
+		border: 1px solid black;
+	}
+	th{
+		border: none;
+	}
+	.btn_delete{
+	background-color: none;
+	border: none;
+	}
+	#btn_print{
+	display: none;
+	}
+}
