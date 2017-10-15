@@ -6,8 +6,8 @@
 	<title>Increase Efficiency</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link type="text/css" href="css/inceff_layout.css" rel="stylesheet" media="screen">
-	<link type="text/css" href="css/inceff.css" rel="stylesheet" media="screen">
+	<link type="text/css" href="css/inceff_layout.css" rel="stylesheet">
+	<link type="text/css" href="css/inceff.css" rel="stylesheet">
 </head>
 <body>
 	<div id="c1" class="c1_default">
