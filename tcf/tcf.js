@@ -1,6 +1,6 @@
 //Global variables.
-var home = 'http://localhost/tcf_online_store/index.php';
-//var home = 'http://increase-efficiency.net/tcf_online_store/index.php';
+var home = 'http://localhost/inceff/tcf/index.php';
+//var home = 'http://increase-efficiency.net/inceff/tcf/index.php';
 var body_center = document.getElementById('body_center');
 var sport = '';
 var year = '';

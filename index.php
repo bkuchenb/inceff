@@ -5,45 +5,46 @@
 <head>
 	<title>Increase Efficiency</title>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<link rel="stylesheet" href="css/style_layout.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/style_print.css" type="text/css" media="print">
+	<link type="text/css" href="css/inceff_layout.css" rel="stylesheet" media="screen">
 </head>
 <body>
-	<div id="c1">
-		<div id="c1_L">c1_L</div>
-		<div id="c1_C">
-			<div id="logo">Increase-Efficiency</div>
+	<div id="c1" class="c1_default">
+		<div id="c1_L" class="c1_L_default"></div>
+		<div id="c1_C" class="c1_C_default">
+			<div id="logo" class="logo_default">Increase-Efficiency</div>
 		</div>
-		<div id="c1_R">c1_R</div>
+		<div id="c1_R" class="c1_R_default"></div>
 	</div>
-	<div id="c2">
-		<nav id="navbar">
-			<button id="btn_login">Log In</button>
-		</nav>
+	<div id="c2" class="c2_default">
+		<nav id="navbar" class="navbar_default"></nav>
 	</div>
-	<div id="c3">
-		<div id="c3_L">
-			<div id="c3_L_r1">
-				<a href="http://www.increase-efficiency.net/adc_optimizer">ADC Optimizer</a>
-				<a href="http://www.increase-efficiency.net/order_form">Order Form</a>
-				<a href="http://www.increase-efficiency.net/file_reader">File Reader</a>
+	<div id="c3" class="c3_default">
+		<div id="c3_L" class="c3_L_default">
+			<div id="c3_L_r1" class="c3_L_r1_default">
+				<!-- <a class="c3_L_r1_a" href="http://www.increase-efficiency.net/adc_optimizer">ADC Optimizer</a>
+				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/barcode_form">Barcode Form</a>
+				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/order_form">Order Form</a>
+				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/price_compare">Price Compare</a>
+				<a class="c3_L_r1_a" href="http://www.increase-efficiency.net/tcf">TCF</a> -->
+				<a class="c3_L_r1_a" href="http://localhost/inceff/adc_optimizer">ADC Optimizer</a>
+				<a class="c3_L_r1_a" href="http://localhost/inceff/barcode_form">Barcode Form</a>
+				<a class="c3_L_r1_a" href="http://localhost/inceff/file_reader">File Reader</a>
+				<a class="c3_L_r1_a" href="http://localhost/inceff/order_form">Order Form</a>
+				<a class="c3_L_r1_a" href="http://localhost/inceff/tcf">TCF</a>
 			</div>
-			<div id="c3_L_r2">c3_L_r2</div>
+			<div id="c3_L_r2" class="c3_L_r2_default"></div>
 		</div>
-		<div id="c3_C">
-			<div id="c3_C_r1">c3_C_r1</div>
-			<div id="c3_C_r2">c3_C_r2</div>
+		<div id="c3_C" class="c3_C_default">
+			<div id="c3_C_r1" class="c3_C_r1_default"></div>
+			<div id="c3_C_r2" class="c3_C_r2_default"></div>
 		</div>
-		<div id="c3_R">
-			<div id="c3_R_r1">c3_R_r1</div>
-			<div id="c3_R_r2">c3_R_r2</div>
+		<div id="c3_R" class="c3_R_default">
+			<div id="c3_R_r1" class="c3_R_r1_default"></div>
+			<div id="c3_R_r2" class="c3_R_r2_default"></div>
 		</div>
 	</div>
-	<div id="c4">c4</div>
+	<div id="c4" class="c4_default"></div>
 	<script src="inceff.js" type="text/javascript"></script>
 </body>
 </html>

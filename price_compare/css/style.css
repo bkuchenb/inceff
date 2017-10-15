@@ -1,7 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	box-sizing: border-box;
 }
 body{
 	background-color: #e6eeff;/*Create a light blue background.*/
@@ -14,11 +12,14 @@ body{
 /*Placed in container 1.*/
 .header_center{
 	padding: 20px 0px;
+	text-align: center;
 }
 /*Placed in header_center.*/
 .logo{
 	background-color: #e6eeff;
+	font-size: 48px;
 	height: 77px;
+	margin: auto;
 	width: 374px;
 }
 .container_02{
