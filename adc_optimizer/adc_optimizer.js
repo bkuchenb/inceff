@@ -54,7 +54,7 @@ function handleFileSelect(evt){
 		f = files[i];
 		//Only process csv files.
 		if(!f.name.match('\.csv')){
-		continue;
+			continue;
 		}
 
 		var reader = new FileReader();
@@ -716,7 +716,9 @@ function create_listener_drop(drop_element){
 			//Save the pocket number then remove it from the html.
 			var pocket = html_data[0];
 			//Remove the pocket number from the html.
+			console.log(html_data);
 			html_data.shift();
+			console.log(html_data);
 			//Add the html to the drop zone.
 			event.target.innerHTML = html_data.join('<br>');
 			//Clear the original cell.
@@ -805,14 +807,15 @@ function create_listener_drop(drop_element){
 				txt_str = txt_str.concat('/');
 				txt_str = txt_str.concat(temp[0].Min);
 			}
-			//Create a text box to store the Max/Min settings.
+			str = str.concat(txt_str);
+			/* //Create a text box to store the Max/Min settings.
 			var par_input = document.createElement('input');
 			par_input.style.border = 'none';
 			par_input.type = 'text';
-			par_input.value = txt_str;
+			par_input.value = txt_str; */
 			//Add the text to the cell.
 			event.target.innerHTML = event.target.innerHTML.concat(str);
-			event.target.appendChild(par_input);
+			//event.target.appendChild(par_input);
 			//Remove the row that was dropped.
 			document.getElementById('table_body').removeChild(document.getElementById(source_id));
 			event.dataTransfer.clearData();

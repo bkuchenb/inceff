@@ -1,7 +1,14 @@
-.container_01, .container_02{
-	visibility: hidden;
+#c1, #c1_L, #c1_R, #c2, #c3_L, #c3_R, #c4{
+	display: none;
 }
-.empty_row, .delete, .sqty, .sqty_order{
+table, th, td{
+	background-color: white;
+	border: 1px solid black;
+}
+th{
+	border: none;
+}
+.empty_row, .delete, .sqty, .sqty_order, .uom, .uom_order{
 	display: none;
 }
 .items, .qty, .source, .sqty, .uom, .itemnum, .desc, .btn_delete{
@@ -28,7 +35,4 @@
 }
 #btn_print{
 	display: none;
-}
-th{
-	border: none;
 }

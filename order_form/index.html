@@ -3,50 +3,63 @@
 <head>
 	<title>Order Form</title>
 	<meta charset="utf-8">
-	<link type="text/css" href="css/style.css" rel="stylesheet" media="screen">
+	<meta name="viewport" content="width=device-width">
+	<link type="text/css" href="css/style_layout.css" rel="stylesheet" media="screen">
+	<link type="text/css" href="css/style_table.css" rel="stylesheet" media="screen">
+	<link type="text/css" href="css/style_order_form.css" rel="stylesheet" media="screen">
 	<link type="text/css" href="css/style_print.css" rel="stylesheet" media="print">
 </head>
-<header>
-	<div class="container_01">
-		<div class="header_center">
-			<div class="logo">Order Form</div>
+<body>
+	<div id="c1" class="c1_default">
+		<div id="c1_L" class="c1_L_default"></div>
+		<div id="c1_C" class="c1_C_default">
+			<div id="logo" class="logo_default">Order Form</div>
 		</div>
+		<div id="c1_R" class="c1_R_default"></div>
 	</div>
-	<div class="container_02">
-		<nav id="navbar" class="navbar">
-			<button id="btn_login">Log in</button>
-		</nav>
+	<div id="c2" class="c2_default">
+		<nav id="navbar" class="navbar_default"></nav>
 	</div>
-</header>
-	<div class="container_03">
-		<div class="body_center">
-			<table id="order_table" border="1">
+	<div id="c3" class="c3_default">
+		<div id="c3_L" class="c3_L_default">
+			<div id="c3_L_r1" class="c3_L_r1_default"></div>
+			<div id="c3_L_r2" class="c3_L_r2_default"></div>
+		</div>
+		<div id="c3_C" class="c3_C_default">
+			<div id="c3_C_r1" class="c3_C_r1_default"></div>
+			<div id="c3_C_r2" class="c3_C_r2_default"></div>
+			<!-- <table id="table_1">
 				<thead>
-					<tr>
-						<th class="barcode">Barcode</th>
-						<th>Item Number</th>
+					<tr id="thead_row">
+						<th class="item_number">Item Number</th>
+						<th>Vendor Number</th>
 						<th>Description</th>
 						<th>Source</th>
-						<th class="sqty">Suggested Qty</th>
+						<th class="uom">Unit of Measure</th>
 						<th>Order Qty</th>
 						<th class="location">Location</th>
 					</tr>
 				</thead>
 				<tbody id="table_body">
 					<tr>
-						<td class="barcode"><input id="1" class="items" type="text" /></td>
+						<td class="item_number"><input id="1" class="items" type="text" /></td>
 						<td class="item_order"></td>
 						<td class="desc_order"></td>
 						<td class="source_order"></td>
-						<td class="sqty_order"></td>
+						<td class="uom_order"></td>
 						<td><input class="qty" type="text" /></td>
 						<td class="delete"><button class="btn_delete" id="btn_0">Delete</button></td>
 						<td class="location"></td>
 					</tr>
 				</tbody>
-			</table>
+			</table> -->
+		</div>
+		<div id="c3_R" class="c3_R_default">
+			<div id="c3_R_r1" class="c3_R_r1_default"></div>
+			<div id="c3_R_r2" class="c3_R_r2_default"></div>
 		</div>
 	</div>
-<script type="text/javascript" src="order_form.js"></script>
+	<div id="c4" class="c4_default"></div>
+	<script type="text/javascript" src="order_form.js"></script>
 </body>
 </html>
