@@ -1,12 +1,14 @@
 //Global variables.
 var home = 'http://localhost/inceff/tcf/index.php';
 //var home = 'http://increase-efficiency.net/inceff/tcf/index.php';
-var body_center = document.getElementById('body_center');
+var c3_R_r1 = document.getElementById('c3_R_r1');
 var sport = '';
 var year = '';
 var letter = '';
 //Make the logo reset the web page when clicked.
-document.getElementById('div_logo').addEventListener('click', function(event){
+document.getElementById('btn_logo').addEventListener('click', function(event){
+	event.preventDefault();
+	console.log('The logo button was pressed.');
 	window.location.href = home;
 }, false);
 //Create the sport buttons.
@@ -29,7 +31,7 @@ function create_sport_buttons(){
 			div_temp.className = 'div_sport_btn';
 			row++;
 			div_temp.appendChild(btn_temp);
-			body_center.appendChild(div_temp);
+			c3_C_r1.appendChild(div_temp);
 		}
 		else{
 			var current_div = document.getElementById('btn_row_' + (row - 1));
@@ -49,7 +51,7 @@ function create_listener_sport_button(btn_temp){
 			window.location.href = home;
 		}, false);
 		//Clear the buttons.
-		body_center.innerHTML = '';
+		c3_C_r1.innerHTML = '';
 		create_year_buttons();
 	}, false);
 }
@@ -68,7 +70,7 @@ function create_year_buttons(){
 			div_temp.className = 'div_year_btn';
 			row++;
 			div_temp.appendChild(btn_temp);
-			body_center.appendChild(div_temp);
+			c3_C_r1.appendChild(div_temp);
 		}
 		else{
 			var current_div = document.getElementById('btn_row_' + (row - 1));
@@ -85,11 +87,11 @@ function create_listener_year_button(btn_temp){
 		document.getElementById('link_year').innerHTML = year;
 		document.getElementById('link_year').addEventListener('click', function(event){
 			//Clear the buttons.
-			body_center.innerHTML = '';
+			c3_C_r1.innerHTML = '';
 			create_year_buttons();
 		}, false);
 		//Clear the buttons.
-		body_center.innerHTML = '';
+		c3_C_r1.innerHTML = '';
 		create_letter_buttons();
 	}, false);
 }
@@ -112,7 +114,7 @@ function create_letter_buttons(){
 			div_temp.className = 'div_letter_btn';
 			row++;
 			div_temp.appendChild(btn_temp);
-			body_center.appendChild(div_temp);
+			c3_C_r1.appendChild(div_temp);
 		}
 		else{
 			var current_div = document.getElementById('btn_row_' + (row - 1));
@@ -129,11 +131,11 @@ function create_listener_letter_button(btn_temp){
 		document.getElementById('link_letter').innerHTML = letter;
 		document.getElementById('link_letter').addEventListener('click', function(event){
 			//Clear the buttons.
-			body_center.innerHTML = '';
+			c3_R_r1.innerHTML = '';
 			create_letter_buttons();
 		}, false);
 		//Clear the buttons.
-		body_center.innerHTML = '';
+		c3_C_r1.innerHTML = '';
 		//Get the sets that that correspond to the chosen buttons.
 		get_set_list();
 	}, false);
@@ -148,7 +150,7 @@ function get_set_list(){
 			var column_names = ['Year', 'Set', 'Sales'];
 			var json_list_keys = ['set_year', 'set_name', 'total'];
 			//Display the results.
-			create_table('body_center', column_names, json_list, json_list_keys);
+			create_table('c3_C_r1', column_names, json_list, json_list_keys);
 		}
 	}
 	xhttp.open("POST", "ajax.php", true);

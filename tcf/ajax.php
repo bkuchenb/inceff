@@ -1,6 +1,6 @@
 <?php
 //Connect to the inceff database.
-require('mysqli_connect2.php');
+require('mysqli_connect.php');
 
 if(isset($_POST['category']) && isset($_POST['year']) && isset($_POST['letter']))
 {

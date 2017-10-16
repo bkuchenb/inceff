@@ -1,0 +1,22 @@
+html{
+	/*Create a light green background.*/
+	background-color: #bbff99;
+}
+.c2_default{
+	/*Create a green background darker than container_01 and container_03.*/
+	background-color: #5cd65c;
+}
+.navbar_li{
+	display: inline;
+}
+.btn_logo{
+	display: block;
+	margin:0 auto;
+	background-image: url(../img/tcf_logo.png);
+	background-color: #bbff99;
+	background-repeat: no-repeat;
+	border-style: none;
+	cursor: pointer;
+	width: 46.75em;
+	height: 10em;
+}
