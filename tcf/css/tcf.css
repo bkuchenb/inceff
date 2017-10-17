@@ -55,6 +55,7 @@ html{
 	margin-bottom: 0.125em;
 	margin-left: 0.125em;
 	margin-top: 0.125em;
+	min-height: 1.3em;
 	padding-left: 0.375em;
 	text-align: left;
 }
