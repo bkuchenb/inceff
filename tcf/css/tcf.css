@@ -6,12 +6,15 @@ html{
 	/*Create a green background darker than container_01 and container_03.*/
 	background-color: #5cd65c;
 }
+.navbar_default{
+	padding: 0.0625em;
+}
 .navbar_li{
 	display: inline;
 }
 .btn_logo{
 	display: block;
-	margin:0 auto;
+	margin: 0 auto;
 	background-image: url(../img/tcf_logo.png);
 	background-color: #bbff99;
 	background-repeat: no-repeat;
@@ -19,4 +22,10 @@ html{
 	cursor: pointer;
 	width: 46.75em;
 	height: 10em;
+}
+.c3_C_r2{
+	padding-top: 0.0625em;
+}
+.c3_C_r1_tcf{
+	border: 0.0625em solid black;
 }
