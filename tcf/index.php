@@ -7,7 +7,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link type="text/css" href="../css/inceff_layout.css" rel="stylesheet">
-	<link type="text/css" href="../css/inceff_table.css" rel="stylesheet">
 	<link type="text/css" href="css/tcf.css" rel="stylesheet">
 </head>
 <body>

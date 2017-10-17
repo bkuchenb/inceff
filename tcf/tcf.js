@@ -1,15 +1,14 @@
 //Global variables.
 //var home = 'http://localhost/inceff/tcf/index.php';
-var home = 'http://increase-efficiency.net/inceff/tcf/index.php';
+var home = 'http://www.increase-efficiency.net/tcf/index.php';
 var c3_C_r2 = document.getElementById('c3_C_r2');
 var sport = '';
 var year = '';
 var letter = '';
-var row_num = '';
+var row_num = 0;
 //Make the logo reset the web page when clicked.
 document.getElementById('btn_logo').addEventListener('click', function(event){
 	event.preventDefault();
-	console.log('The logo button was pressed.');
 	window.location.href = home;
 }, false);
 //Create the sport buttons.
@@ -18,7 +17,7 @@ function cL_btns_letter(btn_temp){
 	btn_temp.addEventListener('click', function(event){
 		event.preventDefault();
 		//Save the name of the chosen letter.
-		var letter = btn_temp.innerHTML;
+		letter = btn_temp.innerHTML;
 		//Update the navbar.
 		document.getElementById('link_letter').innerHTML = letter;
 		document.getElementById('link_letter').addEventListener('click', function(event){
@@ -29,16 +28,9 @@ function cL_btns_letter(btn_temp){
 		//Clear the buttons.
 		c3_C_r2.innerHTML = '';
 		//Create the tables needed to display the set data.
-		cr_tcf_layout();
+		cr_layout_tcf();
 		//Get the sets that that correspond to the chosen buttons.
-		/* var set_list = get_set_list(); */
-		var set_list = [{'set_year': '1990', 'set_name': 'Topps', 'total': '19.47'},
-		{'set_year': '1991', 'set_name': 'Topps', 'total': '20.47'},
-		{'set_year': '1992', 'set_name': 'Topps', 'total': '21.47'},
-		{'set_year': '1993', 'set_name': 'Topps', 'total': '22.47'}]
-		for(var i = 0; i < set_list.length; i++){
-			cr_tcf_row(set_list[i]);
-		}
+		get_set_list();
 		
 	}, false);
 }
@@ -46,7 +38,7 @@ function cL_btn_sport(btn_temp){
 	btn_temp.addEventListener('click', function(event){
 		event.preventDefault();
 		//Save the name of the chosen sport.
-		var sport = btn_temp.innerHTML;
+		sport = btn_temp.innerHTML;
 		//Update the navbar.
 		document.getElementById('link_sport').innerHTML = sport;
 		document.getElementById('link_sport').addEventListener('click', function(event){
@@ -154,7 +146,7 @@ function cr_btns_year(){
 		}
 	}	
 }
-function cr_tcf_layout(){
+function cr_layout_tcf(){
 	//Clear the area where two tables will go.
 	var c3_C_r1 = document.getElementById('c3_C_r1');
 	c3_C_r1.innerHTML = '';
@@ -194,7 +186,7 @@ function cr_tcf_layout(){
 	temp_div_table.appendChild(temp_div_tbody);
 	c3_C_r2.appendChild(temp_div_table);
 }
-function cr_tcf_row(temp_list){
+function cr_row_tcf(temp_list){
 	var temp_div_tr = document.createElement('div');
 	temp_div_tr.id = 'tbody_tr' + row_num;
 	temp_div_tr.className = 'tr tbody_tr';
@@ -227,11 +219,13 @@ function get_set_list(){
 		if (xhttp.readyState == 4 && xhttp.status == 200){
 			//Get the set list with sales totals.
 			var json_list = JSON.parse(xhttp.responseText);
-			return json_list;
-			/* var column_names = ['Year', 'Set', 'Sales'];
-			var json_list_keys = ['set_year', 'set_name', 'total'];
-			//Display the results.
-			create_table('c3_C_r2', column_names, json_list, json_list_keys); */
+			/* var set_list = [{'set_year': '1990', 'set_name': 'Topps', 'total': '19.47'},
+				{'set_year': '1991', 'set_name': 'Topps', 'total': '20.47'},
+				{'set_year': '1992', 'set_name': 'Topps', 'total': '21.47'},
+				{'set_year': '1993', 'set_name': 'Topps', 'total': '22.47'}] */
+			for(var i = 0; i < json_list.length; i++){
+				cr_row_tcf(json_list[i]);
+			}
 		}
 	}
 	xhttp.open("POST", "ajax.php", true);

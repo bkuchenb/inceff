@@ -25,6 +25,33 @@ Some divs (left, center, right) have multiple rows. */
 	font-size: 1em;
 	width: 100%
 }
+.td6{
+	/* Match the page background.*/
+	background-color: #e6eeff;
+	border: none;
+}
+.td_input{
+	background-color: transparent;
+	border: none;
+	min-height: 1em;
+	width: 100%;
+}
+#th0, #th1, #th3, #th4, #th5, #th6,
+.td0, .td1, .td3, .td4, .td5, .td6{
+	width: 8.125em;
+}
+#th2, .td2{
+	width: 18.75em;
+}
+#th6{
+	visibility: hidden;
+}
+.odd_row{
+	background-color: #D3D3D3;
+}
+.invalid_type{
+	background-color: Red;
+}
 @media print{
 	#c1, #c1_L, #c1_R, #c2, #c3_L, #c3_R, #c4{
 	display: none;
