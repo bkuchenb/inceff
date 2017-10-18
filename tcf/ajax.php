@@ -28,15 +28,6 @@ if(isset($_POST['category']) && isset($_POST['year']) && isset($_POST['letter'])
 		while($row = mysqli_fetch_array($r, MYSQLI_ASSOC)){
 			array_push($data, $row);
 		}
-		// Set the database access information as constants:
-		DEFINE ('DB_USER2', 'bk00chenb');
-		DEFINE ('DB_PASSWORD2', 'NR8A*Ecb*');
-		DEFINE ('DB_HOST2', 'inceff.ctlel9cvjtqf.us-west-2.rds.amazonaws.com');
-		DEFINE ('DB_NAME2', 'inceff');
-
-		// Make the connection:
-		$dbc = @mysqli_connect(DB_HOST2, DB_USER2, DB_PASSWORD2, DB_NAME2)
-		OR die ('Could not connect to MySQL: ' . mysqli_connect_error());
 		//Get the sales data for each set.
 		for($i = 0; $i < count($data); $i++){
 			//Create the query.
@@ -51,6 +42,21 @@ if(isset($_POST['category']) && isset($_POST['year']) && isset($_POST['letter'])
 				//Fetch the results.
 				$row = mysqli_fetch_array($r2, MYSQLI_ASSOC);
 				$data[$i]['total'] = $row['total'];
+			}
+			else{
+				echo mysqli_error($dbc) . ' Query: ' . $q;
+			}
+			//Get the location in tcf_overstock.
+			$q = 'SELECT location
+			  FROM tcf_overstock
+			  WHERE set_id = "' . $data[$i]['set_id'] . '"';
+			//Run the query.
+			$r3 = @mysqli_query($dbc, $q);
+			//If the query runs ok, return the records.
+			if($r3){
+				//Fetch the results.
+				$row = mysqli_fetch_array($r3, MYSQLI_ASSOC);
+				$data[$i]['location'] = $row['location'];
 			}
 			else{
 				echo mysqli_error($dbc) . ' Query: ' . $q;

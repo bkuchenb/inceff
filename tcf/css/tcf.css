@@ -34,6 +34,9 @@ html{
 	margin: auto;
 	text-align: left;
 }
+#thead_tr{
+	padding-right: 1em;
+}
 .th{
 	/*Create a dark green background.*/
 	background-color: #5cd65c;
@@ -60,11 +63,16 @@ html{
 	text-align: left;
 	vertical-align: top;
 }
-#th0, .td0, #th2, .td2, #th3, .td3{
-	width: 10.45em;
+.td0, .td2, .td3{
+	width: 14%;
 }
-#th1, .td1{
-	width: 37.325em;
+.td1{
+	width: 54%;
+}#th0, #th2, #th3{
+	width: 14%;
+}
+#th1{
+	width: 54%;
 }
 .btn_hidden{
     visibility: hidden;

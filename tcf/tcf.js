@@ -31,7 +31,7 @@ function cL_btns_letter(btn_temp){
 		//Create the tables needed to display the set data.
 		cr_layout_tcf(column_names);
 		//Get the sets that that correspond to the chosen buttons.
-		get_set_list2();
+		get_set_list();
 		
 	}, false);
 }
@@ -209,7 +209,7 @@ function cr_row_tcf(temp_list){
 	temp_div_tr.id = 'tbody_tr' + row_num;
 	temp_div_tr.className = 'tr tbody_tr';
 	//Create the cells for the tbody_tr.
-	for(var i = 0; i < 4; i++){
+	for(var i = 0; i < temp_list.length; i++){
 		//Create the cell.
 		var temp_div_td = document.createElement('div');
 		temp_div_td.className = 'td td' + i;
@@ -231,26 +231,16 @@ function get_set_list(){
 			var json_list = JSON.parse(xhttp.responseText);
 			//Add the data to table2.
 			for(var i = 0; i < json_list.length; i++){
-				cr_row_tcf(json_list[i]);
-			}
+				var temp_list = [json_list[i]['set_year'],
+				json_list[i]['set_name'], json_list[i]['location'],
+				json_list[i]['total']]
+				cr_row_tcf(temp_list);
+			}//Add the data to table2.
 		}
 	}
 	xhttp.open("POST", "ajax.php", true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.send(post_data);
-}
-function get_set_list2(){
-	var json_list = [{'set_year': '1990', 'set_name': 'Topps', 'total': '19.47', 'location': '267'},
-				{'set_year': '1991', 'set_name': 'Topps', 'total': '20.47', 'location': 'top loader'},
-				{'set_year': '1992', 'set_name': 'Topps', 'total': '21.47', 'location': ''},
-				{'set_year': '1993', 'set_name': 'Topps', 'total': '22.47', 'location': '27'}]
-	//Add the data to table2.
-	for(var i = 0; i < json_list.length; i++){
-		var temp_list = Object.keys(json_list[i]).map(function(key){
-			return json_list[i][key];
-		});
-		cr_row_tcf(temp_list);
-	}
 }
 function create_table(parent_node_id, column_names, json_list, json_list_keys){
 	//Clear the area where the table will go.
