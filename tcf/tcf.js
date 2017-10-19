@@ -31,7 +31,7 @@ function cL_btns_letter(btn_temp){
 		//Create the tables needed to display the set data.
 		cr_layout_tcf(column_names);
 		//Get the sets that that correspond to the chosen buttons.
-		get_set_list();
+		get_set_list2();
 		
 	}, false);
 }
@@ -241,6 +241,13 @@ function get_set_list(){
 	xhttp.open("POST", "ajax.php", true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.send(post_data);
+}
+/* This function is only used when running the application on localhost.
+It bypasses the function that makes an ajax call. */
+function get_set_list2(){
+	//Add the data to table2.
+	var temp_list = ['1990', 'Topps', 'Location 1', '19.00'];
+	cr_row_tcf(temp_list);
 }
 function create_table(parent_node_id, column_names, json_list, json_list_keys){
 	//Clear the area where the table will go.

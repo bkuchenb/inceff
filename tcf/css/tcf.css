@@ -39,7 +39,7 @@ html{
 }
 .th{
 	/*Create a dark green background.*/
-	background-color: #5cd65c;
+	background-color: #078F02;
 	border: 0.0625em solid black;
 	display: inline-block;
 	font-size: 1em;
@@ -62,6 +62,9 @@ html{
 	padding-left: 0.375em;
 	text-align: left;
 	vertical-align: top;
+}
+.tr:hover{
+  background-color: #5cd65c;
 }
 .td0, .td2, .td3{
 	width: 14%;
