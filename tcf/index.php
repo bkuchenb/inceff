@@ -14,7 +14,7 @@
 		<div id="c1_L" class="c1_L_default"></div>
 		<div id="c1_C" class="c1_C_default">
 			<div id="logo" class="logo_default">
-				<button id="btn_logo" class="btn_logo"></button>
+				<button id="btn_logo" class="btn_logo_default"></button>
 			</div>
 		</div>
 		<div id="c1_R" class="c1_R_default"></div>

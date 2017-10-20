@@ -31,7 +31,7 @@ function cL_btns_letter(btn_temp){
 		//Create the tables needed to display the set data.
 		cr_layout_tcf(column_names);
 		//Get the sets that that correspond to the chosen buttons.
-		get_set_list2();
+		get_set_list();
 		
 	}, false);
 }

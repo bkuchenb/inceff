@@ -4,8 +4,8 @@
 //  selects the database, and sets the encoding.
 
 // Set the database access information as constants:
-DEFINE ('DB_USER', 'bk00chenb');
-DEFINE ('DB_PASSWORD', 'NR8A*Ecb*');
+DEFINE ('DB_USER', 'guest');
+DEFINE ('DB_PASSWORD', 'R00thM!ck');
 DEFINE ('DB_HOST', 'inceff.ctlel9cvjtqf.us-west-2.rds.amazonaws.com');
 DEFINE ('DB_NAME', 'inceff');
 
