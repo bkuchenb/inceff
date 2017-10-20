@@ -78,7 +78,7 @@ html{
 .c3_L_default, .c3_R_default{
 	display: inline-block;
 	margin: auto;
-	height: 30em;
+	height: 20em;
 	position: absolute;
 	width: 19.75%;
 }
@@ -90,7 +90,7 @@ html{
 }
 .c3_C_default{
 	display: inline-block;
-	height: 30em;
+	height: 24em;
 	position: relative;
 	text-align: center;
 	width: 60%;
@@ -104,7 +104,7 @@ html{
 	border-bottom: 0.0625em solid black;
 	border-left: 0.0625em solid black;
 	border-right: 0.0625em solid black;
-	height: 26.25em;
+	height: 23.75em;
 	overflow: scroll;
 }
 .c4_default{
@@ -112,4 +112,27 @@ html{
 	position: relative;
     text-align: center;
     width: 100%;
+}
+@media screen and (min-height: 700px){
+	.c3_L_default, .c3_R_default{
+		display: inline-block;
+		margin: auto;
+		height: 30em;
+		position: absolute;
+		width: 19.75%;
+	}
+	.c3_C_default{
+		display: inline-block;
+		height: 30em;
+		position: relative;
+		text-align: center;
+		width: 60%;
+	}
+	.c3_C_r2_default{
+		border-bottom: 0.0625em solid black;
+		border-left: 0.0625em solid black;
+		border-right: 0.0625em solid black;
+		height: 26.25em;
+		overflow: scroll;
+	}
 }
