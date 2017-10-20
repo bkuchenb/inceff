@@ -11,7 +11,12 @@
 </head>
 <body>
 	<div id="c1" class="c1_default">
-		<div id="c1_L" class="c1_L_default"></div>
+		<div id="c1_L" class="c1_L_default">
+			<a href="mailto:mickeybuysgold@gmail.com">mickeybuysgold@gmail.com</a>
+			<br>470 North Greenbush Road
+			<br>Rensselaer, New York 12144
+			<br>(518) 283-3818
+		</div>
 		<div id="c1_C" class="c1_C_default">
 			<div id="logo" class="logo_default">
 				<button id="btn_logo" class="btn_logo_default"></button>
@@ -31,8 +36,28 @@
 	</div>
 	<div id="c3" class="c3_default">
 		<div id="c3_L" class="c3_L_default">
-			<div id="c3_L_r1" class="c3_L_r1_default"></div>
-			<div id="c3_L_r2" class="c3_L_r2_default"></div>
+			<div id="c3_L_r1" class="c3_L_r1">
+				<button id="c3_L_r1_btn0" class="green button c3_L_r_btn">Overstock</button>
+			</div>
+			<div id="c3_L_r2" class="c3_L_r2">
+				<button id="c3_L_r2_btn0" class="green button c3_L_r_btn">Orders</button>
+			</div>
+			<div id="c3_L_r3" class="c3_L_r3">
+				<button id="c3_L_r3_btn0" class="green button c3_L_r_btn">Order Details</button>
+			</div>
+			<div id="c3_L_r4" class="c3_L_r4">
+				<button id="c3_L_r4_btn0" class="green button c3_L_r_btn">Customers</button>
+			</div>
+			<div id="c3_L_r5" class="c3_L_r5">Reports</div>
+			<div id="c3_L_r6" class="c3_L_r6">
+				<button id="c3_L_r4_btn0" class="green button c3_L_r_btn">Sales Tax</button>
+			</div>
+			<div id="c3_L_r7" class="c3_L_r7">
+				<button id="c3_L_r7_btn0" class="green button c3_L_r_btn">Sets</button>
+			</div>
+			<div id="c3_L_r8" class="c3_L_r8">
+				<button id="c3_L_r8_btn0" class="green button c3_L_r_btn">Players</button>
+			</div>
 		</div>
 		<div id="c3_C" class="c3_C_default">
 			<div id="c3_C_r1" class="c3_C_r1_default"></div>

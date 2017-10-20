@@ -23,6 +23,28 @@ html{
 	width: 46.75em;
 	height: 10em;
 }
+.c3_L_r1{
+	border-top: 0.003125em solid black;
+}
+.c3_L_r1, .c3_L_r2, .c3_L_r3,
+.c3_L_r4, .c3_L_r5, .c3_L_r6,
+.c3_L_r7, .c3_L_r8{
+	border-left: 0.003125em solid black;
+	border-right: 0.003125em solid black;
+	font-size: 1em;
+	padding-left: 0.3125em;
+	padding-top: 0.3125em;
+	text-align: left;
+}
+.c3_L_r4, .c3_L_r5, .c3_L_r8{
+	border-bottom: 0.003125em solid black;
+	padding-bottom: 0.3125em;
+}
+.c3_L_r5{
+	font-size: 1.5em;
+	font-weight: bold;
+	/* text-align: center; */
+}
 .c3_C_r2_default{
 	padding-top: 0.3125em;
 }
@@ -79,6 +101,9 @@ html{
 }
 .btn_hidden{
     visibility: hidden;
+}
+.c3_L_r_btn{
+	width: 75%;
 }
 .button{
 	-moz-border-radius:5px;
